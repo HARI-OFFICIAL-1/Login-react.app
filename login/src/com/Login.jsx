@@ -14,7 +14,7 @@ function Login() {
     const [login, setlogin] = useState([])
 
     const [isRegister, setIsRegister] = useState(false)
-    const Url = isRegister ? 'http://localhost:5001/register' : 'http://localhost:5001/login'
+    const Url = isRegister ? 'https://login-react-app.onrender.com/register' : 'https://login-react-app.onrender.com/login'
 
     //change register & login
     const change = () => {
@@ -23,7 +23,7 @@ function Login() {
     }
 
     useEffect(function () {
-        axios.get('http://localhost:5001/loginlist').then(function (data) {
+        axios.get('https://login-react-app.onrender.com/loginlist').then(function (data) {
             setlogin(data.data)
         })
     }, [])
