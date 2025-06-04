@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect("mongodb+srv://hariharan3002112:BnszDqxeGvNsZort@hariharan.mrrl2bb.mongodb.net/?retryWrites=true&w=majority&appName=Hariharan").then(() => console.log("db connect ..."))
+mongoose.connect("mongosh "mongodb+srv://cluster0.nb5mjxz.mongodb.net/" --apiVersion 1 --username hariharan3002112 --password HARI7094").then(() => console.log("db connect ..."))
     .catch(() => console.log("db error"))
 
 //model create
