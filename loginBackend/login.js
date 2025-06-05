@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect("mongodb+srv://hariharan3002112:HARI7094@cluster0.nb5mjxz.mongodb.net/").then(() => console.log("db connect ..."))
+mongoose.connect("mongodb+srv://hariharan3002112:HARI7094@cluster0.nb5mjxz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(() => console.log("db connect ..."))
     .catch(() => console.log("db error"))
 
 //model create
